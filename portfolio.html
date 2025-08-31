@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Nguyen Le Minh Tri</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/language-switcher.css">
+    <link rel="stylesheet" href="css/theme-switcher.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Minh Tri</div>
+                <ul class="nav-links">
+                    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                    <li><a href="about.html" data-i18n="nav_about">About</a></li>
+                    <li><a href="portfolio.html" class="active" data-i18n="nav_portfolio">Portfolio</a></li>
+                    <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+                <div class="nav-controls">
+                    <div class="language-switcher">
+                        <a href="#" class="lang-switch active" data-lang="en">EN</a>
+                        <a href="#" class="lang-switch" data-lang="vi">VI</a>
+                    </div>
+                    <div class="theme-switcher">
+                        <div class="theme-toggle"></div>
+                    </div>
+                </div>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+
+
+    <main>
+        <section class="portfolio-hero">
+            <div class="container">
+                <h1 data-i18n="portfolio_title">My Testing Experience</h1>
+                <p class="section-description" data-i18n="portfolio_description">Below are some notable testing projects I have participated in. Each project demonstrates my skills and experience in the field of software testing.</p>
+                
+                <div class="portfolio-filter">
+                    <button class="filter-btn active" data-filter="all" data-i18n="filter_all">All</button>
+                    <button class="filter-btn" data-filter="web" data-i18n="filter_web">Web Testing</button>
+                    <button class="filter-btn" data-filter="mobile" data-i18n="filter_mobile">Mobile Testing</button>
+                    <button class="filter-btn" data-filter="functional" data-i18n="filter_functional">Functional Testing</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-projects">
+            <div class="container">
+                <div class="projects-grid">
+                    <!-- Dự án 1 -->
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-laptop-code"></i>
+                                <p>Fshare Website</p>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Fshare Website Testing</h3>
+                            <p class="project-category">Web Testing</p>
+                            <p class="project-description">Designed and executed test cases for the Fshare website. Verified key user flows including login/logout, popups, and checkout processes. Used Redmine for bug reporting.</p>
+                            <div class="project-links">
+                                <a href="#" class="btn small-btn" target="_blank" data-i18n="project_details">Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dự án 2 -->
+                    <div class="project-card" data-category="mobile">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-mobile-alt"></i>
+                                <p>SingChamps App</p>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>SingChamps App Testing</h3>
+                            <p class="project-category">Mobile Testing</p>
+                            <p class="project-description">Performed manual testing for new features and updates of the SingChamps app, including bug reporting, UI/UX verification, and localization checks. Used ZenDao for defect management.</p>
+                            <div class="project-links">
+                                <a href="#" class="btn small-btn" target="_blank" data-i18n="project_details">Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dự án 3 -->
+                    <div class="project-card" data-category="functional">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-check-circle"></i>
+                                <p>Functional Testing</p>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Web Project Functional Testing</h3>
+                            <p class="project-category">Functional Testing</p>
+                            <p class="project-description">Collaborated on a web project from early stages at Aurora Solution, reviewing business requirements and design documents to plan testing. Developed manual test cases aligned with functional specifications.</p>
+                            <div class="project-links">
+                                <a href="#" class="btn small-btn" target="_blank" data-i18n="project_details">Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dự án 4 -->
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-tools"></i>
+                                <p>Internal Tools</p>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>FPT Internal Tools Testing</h3>
+                            <p class="project-category">Web Testing</p>
+                            <p class="project-description">Supported development of internal tools at FPT - FTI – DNS Center by designing and executing test cases. Identified bugs and inconsistencies, reporting in detail with reproduction steps.</p>
+                            <div class="project-links">
+                                <a href="#" class="btn small-btn" target="_blank" data-i18n="project_details">Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dự án 5 -->
+                    <div class="project-card" data-category="functional">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-bug"></i>
+                                <p>Bug Reporting</p>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Bug Reporting and Regression Testing</h3>
+                            <p class="project-category">Functional Testing</p>
+                            <p class="project-description">Reported software bugs in detail and worked with developers to verify fixes and conduct regression testing. Used tools like Jira, ZenDao, and Redmine for defect management.</p>
+                            <div class="project-links">
+                                <a href="#" class="btn small-btn" target="_blank" data-i18n="project_details">Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dự án 6 -->
+                    <div class="project-card" data-category="mobile">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-bell"></i>
+                                <p>Push Notifications</p>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Push Notification Management</h3>
+                            <p class="project-category">Mobile Testing</p>
+                            <p class="project-description">Managed in-app banner deployments and push notifications for product updates and maintenance periods. Participated in public testing sessions, monitored user behavior, identified bugs, and submitted reports.</p>
+                            <div class="project-links">
+                                <a href="#" class="btn small-btn" target="_blank" data-i18n="project_details">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/minh-tri-nguyen-le-a4338a371" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:mingzhi.work@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:0945321348" target="_blank"><i class="fas fa-phone"></i></a>
+                </div>
+                <p data-i18n="copyright">© 2023 Nguyen Le Minh Tri. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/lang.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html>

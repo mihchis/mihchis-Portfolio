@@ -1,0 +1,99 @@
+.theme-switcher {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.theme-toggle {
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.theme-toggle::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: white;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s;
+}
+
+.theme-toggle.dark {
+    background-color: #007bff;
+}
+
+.theme-toggle.dark::after {
+    transform: translateX(20px);
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #222;
+    color: #f4f4f4;
+}
+
+body.dark-mode header {
+    background-color: #333;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .nav-links a {
+    color: #f4f4f4;
+}
+
+body.dark-mode .nav-links a:hover,
+body.dark-mode .nav-links a.active {
+    color: var(--primary-color);
+}
+
+body.dark-mode .burger div {
+    background-color: #f4f4f4;
+}
+
+body.dark-mode .skill-card,
+body.dark-mode .project-card,
+body.dark-mode .contact-form input,
+body.dark-mode .contact-form textarea,
+body.dark-mode .contact-info {
+    background-color: #333;
+    color: #f4f4f4;
+    border-color: #444;
+}
+
+body.dark-mode .footer {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+body.dark-mode .social-links a {
+    color: #f4f4f4;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .theme-switcher {
+        margin-left: 10px;
+    }
+    
+    .theme-toggle {
+        width: 36px;
+        height: 18px;
+    }
+    
+    .theme-toggle::after {
+        width: 14px;
+        height: 14px;
+    }
+    
+    .theme-toggle.dark::after {
+        transform: translateX(18px);
+    }
+}

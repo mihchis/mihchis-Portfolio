@@ -1,0 +1,48 @@
+.language-switcher {
+    display: flex;
+    align-items: center;
+}
+
+.language-switcher .lang-switch {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 2px 0;
+    cursor: pointer;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.language-switcher .lang-switch:hover {
+    background-color: #f0f0f0;
+}
+
+.language-switcher .lang-switch.active {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Nav controls container */
+.nav-controls {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav-controls {
+        margin-right: 10px;
+    }
+    
+    .language-switcher .lang-switch {
+        padding: 3px 6px;
+        font-size: 0.9em;
+    }
+    
+    .language-switcher {
+        margin-right: 10px;
+    }
+}

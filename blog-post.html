@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post - Nguyen Le Minh Tri</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/language-switcher.css">
+    <link rel="stylesheet" href="css/theme-switcher.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Minh Tri</div>
+                <ul class="nav-links">
+                    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                    <li><a href="about.html" data-i18n="nav_about">About</a></li>
+                    <li><a href="portfolio.html" data-i18n="nav_portfolio">Portfolio</a></li>
+                    <li><a href="blog.html" class="active" data-i18n="nav_blog">Blog</a></li>
+                    <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+                <div class="nav-controls">
+                    <div class="language-switcher">
+                        <a href="#" class="lang-switch active" data-lang="en">EN</a>
+                        <a href="#" class="lang-switch" data-lang="vi">VI</a>
+                    </div>
+                    <div class="theme-switcher">
+                        <div class="theme-toggle"></div>
+                    </div>
+                </div>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+
+    <main>
+        <article class="blog-post-detail">
+            <div class="container">
+                <div class="post-header">
+                    <h1 id="post-title" data-i18n="blog_post_title">Effective Test Case Writing Techniques</h1>
+                    <div class="post-meta">
+                        <span class="post-date" id="post-date" data-i18n="blog_post_date">June 15, 2023</span>
+                        <span class="post-author" data-i18n="blog_post_author_prefix">by <span data-i18n="author_name">Nguyen Le Minh Tri</span></span>
+                    </div>
+                </div>
+                
+                <div class="post-featured-image">
+                    <img src="https://via.placeholder.com/1200x600" alt="Blog Post Featured Image" id="post-image">
+                </div>
+                
+                <div class="post-content-wrapper">
+                    <div class="post-content" id="post-content">
+                        <p>Writing effective test cases is a critical skill for any quality assurance professional. Good test cases ensure comprehensive coverage of application functionality while being clear enough for any tester to execute.</p>
+                        
+                        <h2>What Makes a Good Test Case?</h2>
+                        <p>An effective test case should be:</p>
+                        <ul>
+                            <li><strong>Clear and Concise</strong> - Anyone should be able to understand and execute it</li>
+                            <li><strong>Complete</strong> - Contains all necessary information to execute the test</li>
+                            <li><strong>Traceable</strong> - Linked to requirements or user stories</li>
+                            <li><strong>Reusable</strong> - Can be used in different test cycles</li>
+                            <li><strong>Maintainable</strong> - Easy to update when requirements change</li>
+                        </ul>
+                        
+                        <h2>Test Case Structure</h2>
+                        <p>A well-structured test case typically includes:</p>
+                        <ol>
+                            <li><strong>Test Case ID</strong> - Unique identifier</li>
+                            <li><strong>Test Case Description</strong> - What is being tested</li>
+                            <li><strong>Preconditions</strong> - Setup required before execution</li>
+                            <li><strong>Test Steps</strong> - Detailed steps to execute</li>
+                            <li><strong>Expected Results</strong> - What should happen after each step</li>
+                            <li><strong>Actual Results</strong> - What actually happened (filled during execution)</li>
+                            <li><strong>Status</strong> - Pass/Fail/Blocked</li>
+                        </ol>
+                        
+                        <h2>Best Practices</h2>
+                        <p>Follow these best practices to write more effective test cases:</p>
+                        
+                        <h3>1. Focus on One Thing per Test Case</h3>
+                        <p>Each test case should verify one specific functionality or scenario. This makes it easier to identify what failed when a test doesn't pass.</p>
+                        
+                        <h3>2. Use Descriptive Titles</h3>
+                        <p>The test case title should clearly indicate what is being tested. For example, "Verify user login with valid credentials" is better than "Test login".</p>
+                        
+                        <h3>3. Be Specific in Test Steps</h3>
+                        <p>Write clear, actionable steps that anyone can follow. Include specific test data where needed.</p>
+                        
+                        <h3>4. Define Expected Results Clearly</h3>
+                        <p>For each test step, clearly define what the expected outcome should be. This removes ambiguity during test execution.</p>
+                        
+                        <h3>5. Consider Edge Cases</h3>
+                        <p>Don't just test the happy path. Include test cases for boundary values, invalid inputs, and error conditions.</p>
+                        
+                        <h3>6. Keep Test Cases Updated</h3>
+                        <p>As the application evolves, make sure to update your test cases accordingly.</p>
+                        
+                        <h2>Conclusion</h2>
+                        <p>Writing effective test cases is both an art and a science. By following these guidelines, you can create test cases that improve your testing efficiency and help deliver higher quality software.</p>
+                    </div>
+                    
+                    <div class="post-tags">
+                        <span class="tag">Testing</span>
+                        <span class="tag">Quality Assurance</span>
+                        <span class="tag">Best Practices</span>
+                    </div>
+                </div>
+                
+                <div class="post-navigation">
+                    <a href="blog-post.html?id=2" class="prev-post">
+                        <i class="fas fa-arrow-left"></i>
+                        <span>Previous Post</span>
+                    </a>
+                    <a href="blog.html" class="back-to-blog">
+                        <i class="fas fa-th-large"></i>
+                        <span data-i18n="back_to_blog">Back to Blog</span>
+                    </a>
+                    <a href="blog-post.html?id=3" class="next-post">
+                        <span>Next Post</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/minh-tri-nguyen-le-a4338a371" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:mingzhi.work@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:0945321348" target="_blank"><i class="fas fa-phone"></i></a>
+                </div>
+                <p data-i18n="copyright">© 2023 Nguyen Le Minh Tri. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/lang.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/blog-post.js"></script>
+</body>
+</html>
